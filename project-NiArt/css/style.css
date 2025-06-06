@@ -1,0 +1,168 @@
+:root {
+    --primary: #4A6FA5;
+    --secondary: #E57A44;
+    --accent: #F4D35E;
+    --dark: #2D3142;
+    --light: #F7F9FC;
+}
+
+@font-face {
+    font-family: 'Artistic';
+    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.brand-font {
+    font-family: 'Artistic', serif;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.testimonial-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.artwork-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.artwork-card img {
+    transition: transform 0.5s ease;
+}
+
+.artwork-card:hover img {
+    transform: scale(1.05);
+}
+
+.community-card {
+    background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(245,240,255,0.9) 100%);
+    backdrop-filter: blur(10px);
+}
+
+.partner-logo {
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.partner-logo:hover {
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.rating-star {
+    color: #F59E0B;
+}
+
+.gallery-filter-btn {
+    position: relative;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    background-color: #EDE9FE;
+    color: var(--primary);
+}
+
+.gallery-filter-btn:hover {
+    background-color: #D6BCFA;
+    color: white;
+}
+
+.gallery-card {
+    transition: transform 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+}
+
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 0.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1023px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .community-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    footer .grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

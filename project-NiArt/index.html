@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtVision | Contemporary Art Collective</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-primary-800">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-primary-800">About</a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-primary-800">Services</a>
+                </div>
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#home" class="brand-font text-2xl font-bold text-primary-800">ArtVision</a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#gallery" class="nav-link text-gray-700 hover:text-primary-800">Gallery</a>
+                    <a href="#testimonial" class="nav-link text-gray-700 hover:text-primary-800">Testimonials</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-primary-800">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" type="button" class="text-gray-500 hover:text-primary-800 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-primary-800">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-primary-800">About</a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-primary-800">Services</a>
+                    <a href="#gallery" class="nav-link text-gray-700 hover:text-primary-800">Gallery</a>
+                    <a href="#testimonial" class="nav-link text-gray-700 hover:text-primary-800">Testimonials</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-primary-800">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center" id="home"
+             style="background-image: url('assets/images/best.avif');">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div class="max-w-4xl px-6 relative z-10">
+            <h1 class="text-5xl font-bold mb-6 brand-font">Where Art Meets Vision</h1>
+            <p class="text-xl max-w-3xl mx-auto mb-10">Discover contemporary art from Nairobi's most innovative creators. Join our vibrant community of artists and art lovers.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#gallery" class="px-8 py-3 bg-primary-700 text-white font-medium rounded-full hover:bg-primary-800 transition">Explore Gallery</a> 
+                <a href="#community" class="px-8 py-3 border-2 border-primary-700 text-primary-700 font-medium rounded-full hover:bg-primary-50 transition">Join Community</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block px-3 py-1 text-sm font-semibold text-primary-800 bg-primary-100 rounded-full mb-4">ABOUT</span>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Story</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">ArtVision is a contemporary art collective based in Nairobi, Kenya, dedicated to promoting African artists and fostering creative connections across the continent and beyond.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block px-3 py-1 text-sm font-semibold text-primary-800 bg-primary-100 rounded-full mb-4">SERVICES</span>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">What We Offer</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">We provide a range of services to support artists and connect them with collectors, institutions, and art enthusiasts.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 services-grid">
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Artist Representation</h3>
+                    <p class="text-gray-600">Professional representation and career development for emerging and established artists.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Curatorial Services</h3>
+                    <p class="text-gray-600">Exhibition design, curation, and production for galleries and institutions.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Art Advisory</h3>
+                    <p class="text-gray-600">Personalized art advisory services for collectors and corporate clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block px-3 py-1 text-sm font-semibold text-purple-800 bg-purple-100 rounded-full mb-4">GALLERY</span>
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Featured Artworks</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Explore our collection of contemporary African art from emerging and established artists</p>
+            </div>
+            <!-- Filter Buttons -->
+            <div class="flex justify-center mb-12">
+                <button class="gallery-filter-btn" onclick="filterGallery('all')">All</button>
+                <button class="gallery-filter-btn" onclick="filterGallery('painting')">Paintings</button>
+                <button class="gallery-filter-btn" onclick="filterGallery('sculpture')">Sculptures</button>
+                <button class="gallery-filter-btn" onclick="filterGallery('digital')">Digital Art</button>
+            </div>
+            <!-- Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" id="gallery-grid">
+                <!-- Gallery Card 1 -->
+                <div class="gallery-card fade-in painting" data-category="painting">
+                    <div class="artwork-card rounded-xl overflow-hidden bg-gray-100 mb-4">
+                        <img src="assets/images/images (31).jpeg" alt="Abstract Painting" class="w-full h-64 object-cover cursor-pointer" onclick="openLightbox(this.src)" />
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">Abstract Expressionism</h3>
+                    <p class="text-gray-600">By Njideka Crosby</p>
+                </div>
+                <!-- Gallery Card 2 -->
+                <div class="gallery-card fade-in sculpture" data-category="sculpture">
+                    <div class="artwork-card rounded-xl overflow-hidden bg-gray-100 mb-4">
+                        <img src="assets/images/wood.jfif" alt="Wooden Sculpture" class="w-full h-64 object-cover cursor-pointer" onclick="openLightbox(this.src)" />
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">Wooden Sculpture</h3>
+                    <p class="text-gray-600">By El Anatsui</p>
+                </div>
+                <!-- Gallery Card 3 -->
+                <div class="gallery-card fade-in digital" data-category="digital">
+                    <div class="artwork-card rounded-xl overflow-hidden bg-gray-100 mb-4">
+                        <img src="assets/images/images (5).jpeg" alt="Digital Collage" class="w-full h-64 object-cover cursor-pointer" onclick="openLightbox(this.src)" />
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">Digital Collage</h3>
+                    <p class="text-gray-600">By Wangechi Mutu</p>
+                </div>
+                <!-- Gallery Card 4 -->
+                <div class="gallery-card fade-in painting" data-category="painting">
+                    <div class="artwork-card rounded-xl overflow-hidden bg-gray-100 mb-4">
+                        <img src="assets/images/images (6).jpeg" alt="Modern Canvas" class="w-full h-64 object-cover cursor-pointer" onclick="openLightbox(this.src)" />
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">Modern Canvas</h3>
+                    <p class="text-gray-600">By Kudzanai Chiurai</p>
+                </div>
+                <!-- Gallery Card 5 -->
+                <div class="gallery-card fade-in sculpture" data-category="sculpture">
+                    <div class="artwork-card rounded-xl overflow-hidden bg-gray-100 mb-4">
+                        <img src="assets/images/recycled.jfif" alt="Recycled Metal Art" class="w-full h-64 object-cover cursor-pointer" onclick="openLightbox(this.src)" />
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">Recycled Metal Art</h3>
+                    <p class="text-gray-600">By Godfried Donkor</p>
+                </div>
+                <!-- Gallery Card 6 -->
+                <div class="gallery-card fade-in digital" data-category="digital">
+                    <div class="artwork-card rounded-xl overflow-hidden bg-gray-100 mb-4">
+                        <img src="assets/images/digital.jfif" alt="Digital Portrait" class="w-full h-64 object-cover cursor-pointer" onclick="openLightbox(this.src)" />
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">Digital Portrait</h3>
+                    <p class="text-gray-600">By Zanele Muholi</p>
+                </div>
+                <!-- Gallery Card 7 -->
+                <div class="gallery-card fade-in painting" data-category="painting">
+                    <div class="artwork-card rounded-xl overflow-hidden bg-gray-100 mb-4">
+                        <img src="assets/images/water.jfif" alt="Watercolor Landscape" class="w-full h-64 object-cover cursor-pointer" onclick="openLightbox(this.src)" />
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">Watercolor Landscape</h3>
+                    <p class="text-gray-600">By Gerald Machona</p>
+                </div>
+                <!-- Gallery Card 8 -->
+                <div class="gallery-card fade-in sculpture" data-category="sculpture">
+                    <div class="artwork-card rounded-xl overflow-hidden bg-gray-100 mb-4">
+                        <img src="assets/images/stone.jfif" alt="Stone Sculpture" class="w-full h-64 object-cover cursor-pointer" onclick="openLightbox(this.src)" />
+                    </div>
+                    <h3 class="font-bold text-gray-900 mb-1">Stone Sculpture</h3>
+                    <p class="text-gray-600">By Tapfuma Musekiwa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-overlay" id="lightbox">
+        <span class="text-white text-3xl absolute top-4 right-4 cursor-pointer" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-content" class="lightbox-content" src="" alt="Artwork">
+    </div>
+
+<!-- Testimonials -->
+
+<section id="testimonial" class="py-16 bg-gray-50">
+
+    <div class="max-w-4xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-4">Testimonials</h2>
+            <p class="text-gray-600 max-w-xl mx-auto">
+                See what our valued artists and partners say about us.
+            </p>
+        </div>
+        
+        <!-- Carousel Container -->
+        <div class="relative h-96 mb-8">
+            <div id="testimonialCarousel" class="h-full">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card absolute inset-0 opacity-100 visible transition-opacity duration-500">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden p-8 border border-gray-200">
+                        <div class="flex items-center mb-6">
+                            <img class="h-16 w-16 rounded-full border-2 border-purple-500 shadow-md" 
+                                 src="https://randomuser.me/api/portraits/women/44.jpg"  
+                                 alt="Njideka Crosby">
+                            <div class="ml-4">
+                                <h4 class="text-xl font-semibold text-gray-900">Njideka Crosby</h4>
+                                <p class="text-purple-700 text-sm font-medium">Visual Artist</p>
+                                <div class="flex mt-1 text-yellow-500">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <blockquote class="text-gray-600 italic leading-relaxed text-lg">
+                            "As an artist who values cultural dialogue, I appreciate how ArtVision fosters meaningful conversations between artists, critics, and art enthusiasts across continents."
+                        </blockquote>
+                        <div class="text-sm text-gray-500 mt-4">
+                            Featured in <span class="font-semibold">ArtReview</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card absolute inset-0 opacity-0 invisible transition-opacity duration-500">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden p-8 border border-gray-200">
+                        <div class="flex items-center mb-6">
+                            <img class="h-16 w-16 rounded-full border-2 border-purple-500 shadow-md"
+                                 src="https://randomuser.me/api/portraits/men/32.jpg" 
+                                 alt="El Anatsui">
+                            <div class="ml-4">
+                                <h4 class="text-xl font-semibold text-gray-900">El Anatsui</h4>
+                                <p class="text-purple-700 text-sm font-medium">Sculptor</p>
+                                <div class="flex mt-1 text-yellow-500">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <blockquote class="text-gray-600 italic leading-relaxed text-lg">
+                            "The platform has been instrumental in expanding my international reach while maintaining strong connections to our African artistic roots."
+                        </blockquote>
+                        <div class="text-sm text-gray-500 mt-4">
+                            Featured in <span class="font-semibold">Tate Modern Exhibition</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card absolute inset-0 opacity-0 invisible transition-opacity duration-500">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden p-8 border border-gray-200">
+                        <div class="flex items-center mb-6">
+                            <img class="h-16 w-16 rounded-full border-2 border-purple-500 shadow-md"
+                                 src="https://randomuser.me/api/portraits/women/25.jpg" 
+                                 alt="Wangechi Mutu">
+                            <div class="ml-4">
+                                <h4 class="text-xl font-semibold text-gray-900">Wangechi Mutu</h4>
+                                <p class="text-purple-700 text-sm font-medium">Digital Artist</p>
+                                <div class="flex mt-1 text-yellow-500">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <blockquote class="text-gray-600 italic leading-relaxed text-lg">
+                            "ArtVision has created a powerful network that supports digital artists like myself in ways traditional galleries never could."
+                        </blockquote>
+                        <div class="text-sm text-gray-500 mt-4">
+                            Featured in <span class="font-semibold">Venice Biennale</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button onclick="prevTestimonial()" class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-white p-2 rounded-full shadow-md z-10">
+                <i class="fas fa-chevron-left text-purple-800"></i>
+            </button>
+            <button onclick="nextTestimonial()" class="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-white p-2 rounded-full shadow-md z-10">
+                <i class="fas fa-chevron-right text-purple-800"></i>
+            </button>
+
+            <!-- Indicators -->
+            <div class="flex justify-center mt-4 space-x-2">
+                <button onclick="goToTestimonial(0)" class="w-3 h-3 rounded-full bg-purple-300 testimonial-indicator active"></button>
+                <button onclick="goToTestimonial(1)" class="w-3 h-3 rounded-full bg-purple-300 testimonial-indicator"></button>
+                <button onclick="goToTestimonial(2)" class="w-3 h-3 rounded-full bg-purple-300 testimonial-indicator"></button>
+            </div>
+        </div>
+
+        <!-- Updated View All Button with smooth scroll -->
+        <div class="text-center mt-12">
+            <a href="#testimonial" class="inline-flex items-center text-purple-700 font-medium hover:text-purple-900 transition duration-300">
+                View all testimonials
+                <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Partners Section -->
+
+    <section class="py-16 bg-gray-50">
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">Our Esteemed Partners</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Collaborating with leading institutions in the art world</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+                <div class="flex justify-center">
+                    <img src="assets/images/branding-identity-corporate-logo-vector-design-template_460848-13994.avif" alt="MoMA" class="h-36 partner-logo">
+                </div>
+                <div class="flex justify-center">
+                    <img src="assets/images/friends-logo-template_23-2149505594 (1).avif" alt="Tate" class="h-36 partner-logo">
+                </div>
+                <div class="flex justify-center">
+                    <img src="assets/images/gradient-culture-logo-design-template_23-2149856794.avif" alt="Venice Biennale" class="h-36 partner-logo">
+                </div>
+                <div class="flex justify-center">
+                    <img src="assets/images/colorful-people-symbol-vector-design_387989-684.avif" alt="Documenta" class="h-36 partner-logo">
+                </div>
+                <div class="flex justify-center">
+                    <img src="assets/images/symetrical-business-logo_1025-939.avif" alt="Art Basel" class="h-36 partner-logo">
+                </div>
+                <div class="flex justify-center">
+                    <img src="assets/images/images (30).jpeg" alt="Zeitz MOCAA" class="h-36 partner-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+   <!-- Community Section -->
+<section id="community" class="py-20 bg-gradient-to-br from-purple-900 to-indigo-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <span class="inline-block px-3 py-1 text-sm font-semibold text-purple-200 bg-purple-800 bg-opacity-30 rounded-full mb-4">COMMUNITY</span>
+            <h2 class="text-3xl font-bold mb-4">Join Our Vibrant Art Community</h2>
+            <p class="text-lg text-purple-100 max-w-3xl mx-auto">Connect with fellow artists, participate in workshops, and grow your artistic practice</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="community-card rounded-xl p-8 shadow-lg">
+                <div class="text-purple-900 mb-4">
+                    <i class="fas fa-users text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Artist Network</h3>
+                <p class="text-gray-700 mb-4">Connect with over 5,000 artists from across Africa and the diaspora. Share ideas, collaborate on projects, and find mentorship opportunities.</p>
+                <a href="#" class="text-purple-700 font-medium hover:text-purple-900">Join network →</a>
+            </div>
+            <div class="community-card rounded-xl p-8 shadow-lg">
+                <div class="text-purple-900 mb-4">
+                    <i class="fas fa-calendar-alt text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Workshops & Events</h3>
+                <p class="text-gray-700 mb-4">Participate in our monthly workshops, artist talks, and critique sessions led by established artists and curators.</p>
+                <a href="#" class="text-purple-700 font-medium hover:text-purple-900">View calendar →</a>
+            </div>
+            <div class="community-card rounded-xl p-8 shadow-lg">
+                <div class="text-purple-900 mb-4">
+                    <i class="fas fa-trophy text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Opportunities</h3>
+                <p class="text-gray-700 mb-4">Access exclusive calls for submissions, residencies, grants, and exhibition opportunities curated just for our community members.</p>
+                <a href="#" class="text-purple-700 font-medium hover:text-purple-900">Explore opportunities →</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Location Map Section -->
+<section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Visit Us in Nairobi</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">Our gallery is located in the heart of Nairobi's creative district</p>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-xl">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.808560553483!2d36.82115931533093!3d-1.286987535979253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d664f5d9ab%3A0x4e37741a1f3b9a9a!2sNairobi%20City%20County!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <div class="text-center">
+                <div class="text-primary-700 mb-3">
+                    <i class="fas fa-map-marker-alt text-3xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-2">Address</h3>
+                <p class="text-gray-600">ArtVision Gallery<br>Nairobi Creative District<br>P.O. Box 12345-00100<br>Nairobi, Kenya</p>
+            </div>
+            <div class="text-center">
+                <div class="text-primary-700 mb-3">
+                    <i class="fas fa-clock text-3xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-2">Opening Hours</h3>
+                <p class="text-gray-600">Tuesday - Saturday: 10AM - 6PM<br>Sunday: 12PM - 5PM<br>Monday: Closed</p>
+            </div>
+            <div class="text-center">
+                <div class="text-primary-700 mb-3">
+                    <i class="fas fa-phone-alt text-3xl"></i>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900 mb-2">Contact</h3>
+                <p class="text-gray-600">+254 116 497 339 <br>info@artvision.co.ke<br>@artvisionke</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div>
+                <h3 class="text-2xl font-bold mb-6">ArtVision</h3>
+                <p class="text-gray-400 mb-6">Celebrating contemporary African art and fostering creative connections across the globe.</p>
+                <div class="flex space-x-6">
+                    <a href="https://www.instagram.com/artvision" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">
+                        <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                    <a href="https://twitter.com/artvision" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">
+                        <i class="fab fa-x-twitter text-2xl"></i>
+                    </a>
+                    <a href="https://www.facebook.com/artvision" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">
+                        <i class="fab fa-facebook-f text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                <ul class="space-y-3">
+                    <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>  
+                    <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                    <li><a href="#gallery" class="text-gray-400 hover:text-white transition">Gallery</a></li>
+                    <li><a href="#testimonial" class="text-gray-400 hover:text-white transition">Testimonials</a></li>
+                    <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-6">Resources</h4>
+                <ul class="space-y-3">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Artist Resources</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Art Market Reports</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Curatorial Notes</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-6">Newsletter</h4>
+                <p class="text-gray-400 mb-4">Subscribe to receive updates on new exhibitions, artists, and events.</p>
+                <form class="flex">
+                    <input type="email" placeholder="Your email" class="px-4 py-3 rounded-l-lg focus:outline-none text-gray-900 w-full">
+                    <button type="submit" class="bg-primary-700 hover:bg-primary-800 px-4 py-3 rounded-r-lg">
+                        <i class="fas fa-paper-plane text-white"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-500 text-sm mb-4 md:mb-0">© 2025 ArtVision. All rights reserved.</p>
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-500 hover:text-white text-sm transition">Privacy Policy</a>
+                <a href="#" class="text-gray-500 hover:text-white text-sm transition">Terms of Service</a>
+                <a href="#" class="text-gray-500 hover:text-white text-sm transition">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
