@@ -1,0 +1,52 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-link {
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.gallery-filter-btn {
+    padding: 0.5rem 1rem;
+    background-color: #EDE9FE;
+    color: #6B46C1;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.gallery-filter-btn.active,
+.gallery-filter-btn:hover {
+    background-color: #D6BCFA;
+    color: white;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.testimonial-card {
+    transition: opacity 0.5s ease;
+}
+.testimonial-card.visible {
+    opacity: 1;
+}
+
+.lightbox-overlay {
+    display: none;
+}
+.partner-logo {
+    transition: all 0.3s ease;
+}
